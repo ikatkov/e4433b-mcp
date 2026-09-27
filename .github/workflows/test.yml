@@ -1,0 +1,18 @@
+name: Tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+      - run: ./setup
+      - run: .venv/bin/pytest -q
+      - run: .venv/bin/ruff check .
+      - run: .venv/bin/python scripts/check_mcp.py
+      - run: uv build

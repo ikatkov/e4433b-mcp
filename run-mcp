@@ -1,0 +1,9 @@
+#!/bin/sh
+# Stable client entry point; the Python environment stays an implementation detail.
+set -eu
+MCP_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ ! -x "$MCP_ROOT/.venv/bin/e4433b-mcp" ]; then
+    printf '%s\n' "Environment missing. Run: '$MCP_ROOT/setup'" >&2
+    exit 1
+fi
+exec "$MCP_ROOT/.venv/bin/e4433b-mcp" "$@"

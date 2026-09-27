@@ -1,0 +1,20 @@
+.venv/
+.python/
+.uv-cache/
+data/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.DS_Store
+._*
+.env
+.env.*
+!.env.example
+# Original manufacturer manuals are generated locally, not redistributed.
+src/e4433b_mcp/manuals/E4400-*.md
+docs/*-smoke.json

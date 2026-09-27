@@ -1,0 +1,11 @@
+{
+  "capture": "CHANnel1_RAW_20260927_145552.csv (local bench capture, not distributed)",
+  "samples": 120000,
+  "sample_rate_hz": 9999999.999972653,
+  "carrier_fft_hz": 749999.9999979489,
+  "tone_hz_configured": 1000,
+  "modulation_depth_fraction_fit": 0.2925725665403845,
+  "carrier_peak_v_fit": 0.0993530293501577,
+  "envelope_fit_r_squared": 0.9983799764388785,
+  "note": "Hilbert-envelope sine fit; scope verification, not traceable calibration."
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "e4433b-mcp"
+version = "0.1.0"
+description = "Agilent E4433B MCP server over an AR488 USB–GPIB adapter"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["mcp==1.30.0", "pyserial==3.5"]
+
+[project.scripts]
+e4433b-mcp = "e4433b_mcp.server:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<9", "ruff>=0.11"]
+
+[project.urls]
+Repository = "https://github.com/ikatkov/e4433b-mcp"
+Issues = "https://github.com/ikatkov/e4433b-mcp/issues"
+
+[tool.hatch.build]
+exclude = ["src/e4433b_mcp/manuals/E4400-*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".python", ".uv-cache", ".venv", "dist"]

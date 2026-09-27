@@ -1,0 +1,53 @@
+{
+  "manuals": [
+    {
+      "id": "E4400-90324",
+      "title": "ESG Family Signal Generators Programming Guide",
+      "edition": "April 2002",
+      "coverage": "Base SCPI commands, status system, examples, key-to-command reference",
+      "file": "E4400-90324.md",
+      "pages": 259,
+      "source_url": "https://www.testunlimited.com/pdf/an/E4400-90324.pdf",
+      "source_sha256": "4a495fe1f5551a04e3d1a3a0f4b290702830419985b2f6fecc96d64d4fb39ab4",
+      "markdown_sha256": "59766b40a027e33296a6c2d4576ae2e76033db650c490046218bad2d349b41e6",
+      "uri": "e4433b://manuals/E4400-90324"
+    },
+    {
+      "id": "E4400-90328",
+      "title": "Dual ARB and Multicarrier CDMA User and Programming Guide",
+      "edition": "December 2005",
+      "coverage": "UND installed; UN5 sections require that additional option. Mirror adds an advertising page.",
+      "file": "E4400-90328.md",
+      "pages": 275,
+      "source_url": "https://docs.alltest.net/manual/Alltest-HP-Agilent-Keysight-E4437B-Manual.pdf",
+      "source_sha256": "6c9fe08450e1a3aca992bf2ee61a91dec2e358c4dc95f936747b98a72bf38c3f",
+      "markdown_sha256": "38dbcced25a2b6f94b78a67848d974f8ea1d5b06894f4ffe272f13dd619e2d26",
+      "uri": "e4433b://manuals/E4400-90328"
+    },
+    {
+      "id": "E4400-90323",
+      "title": "ESG Family Signal Generators User Guide",
+      "edition": "April 2002",
+      "coverage": "Front panel, controls, memory and instrument operation",
+      "file": "E4400-90323.md",
+      "pages": 225,
+      "source_url": "https://maximinstruments.com/pdf_files/AGILENT_E4433B_User%27s_Guide.pdf",
+      "source_sha256": "007dfbb4889ee79f46b59a5f29ec7b5b95059e9b9bf2ef9ef9f518d9a772b3f5",
+      "markdown_sha256": "0cd327ad826e7b3c68746fce718340e2ade662f7c339b0f576c9bd0aa2752d29",
+      "uri": "e4433b://manuals/E4400-90323"
+    },
+    {
+      "id": "E4400-90327",
+      "title": "UN8 Real-Time I/Q Baseband Generator User and Programming Guide",
+      "edition": "June 2001",
+      "coverage": "UN8 and expanded UN9 memory installed; optional 202/format sections require corresponding options. HTML text conversion; diagrams omitted.",
+      "file": "E4400-90327.md",
+      "pages": 446,
+      "source_url": "https://manualedistruzioni.it/agilent-technologies/laboratory-equipment/esg-series/operating-instructions/123e8",
+      "source_format": "paginated HTML transcription",
+      "markdown_sha256": "3114f9de8e6a6fbaa66fd0e5f6039c22083c771ed13670ee05e7207fde7be8c5",
+      "uri": "e4433b://manuals/E4400-90327",
+      "source_page_url_template": "https://manualedistruzioni.it/data/manuals/12/3/123e8/sources/out/esg_series-{page}.html"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+#!/bin/sh
+# Install both Python and dependencies inside this checkout.
+set -eu
+MCP_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+cd "$MCP_ROOT"
+export UV_PYTHON_INSTALL_DIR="$MCP_ROOT/.python"
+export UV_CACHE_DIR="$MCP_ROOT/.uv-cache"
+export UV_LINK_MODE=copy
+uv python install --no-bin 3.11
+uv sync --locked --managed-python --python 3.11
+printf '%s\n' "Ready: $MCP_ROOT/run-mcp"
